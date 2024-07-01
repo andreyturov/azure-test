@@ -10,6 +10,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
           <ul>
             <li>Testing binding commits to work items</li>
+            <li>Testing pull requests</li>
           </ul>
         </p>
         <a
