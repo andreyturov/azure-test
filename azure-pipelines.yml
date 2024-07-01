@@ -18,5 +18,15 @@ steps:
 - script: |
     cd azure-test
     npm install
+  displayName: 'Install dependencies'
+
+- script: |
+    cd azure-test
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'Build the React app'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'azure-test/build'
+    ArtifactName: 'build-artifacts'
+  displayName: 'Publish build artifacts'
