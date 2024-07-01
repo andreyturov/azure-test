@@ -16,11 +16,12 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd azure-test
+    cd azure-test/test-app
     npm install
   displayName: 'Install dependencies'
 
 - script: |
+    cd azure-test/test-app
     npm run build
   displayName: 'Build the React app'
 
